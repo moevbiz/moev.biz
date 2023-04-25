@@ -1,0 +1,18 @@
+<footer class="footer">
+
+<a href="https://yesterweb.org/no-to-web3/">
+    <img src="assets/images/roly-saynotoweb3.gif" alt="">
+</a>
+
+<a class="c" href="https://moev.biz" style="margin-right: 1rem">&copy; moev.biz</a>
+
+<span class="d" style="margin-right: 1rem">updated: {{ currentDate() }}</span>
+
+{%- for item in tech -%}
+<div class="tech">
+    <i data-tech="{{ item.name }}"></i>
+    <span class="techname">{{ item.name }}</span>
+</div>
+{%- endfor -%}
+
+</footer>

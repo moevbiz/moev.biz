@@ -1,0 +1,460 @@
+- name: ILIT
+  year: 2023
+  url: 'https://transforminglibraries.net'
+  tech:
+    - Tailwind
+    - Alpine.js
+    - Kirby CMS
+  text: | 
+    Website for an academic research project
+    Design: Alessia Scuderi
+
+- name: Weitblick
+  year: 2022
+  url: 'https://weitblick.period.at'
+  tech:
+    - Tailwind
+    - Alpine.js
+    - Kirby CMS
+  text: |
+    Blog on trends and topics in the areas of New Work and Corporate Innovation
+    Design: Period
+
+- name: Dishes
+  year: 2022
+  url: 'https://dishes.menu'
+  tech:
+    - Tailwind
+    - Alpine.js
+    - Eleventy
+  text: |
+    Minisite for an event series in Vienna
+    Design: Marlene Kager
+
+- name: MXR
+  year: 2021
+  url: 'https://mxr.at'
+  tech: 
+    - HTML
+    - JavaScript
+    - SCSS
+    - Kirby CMS
+  text: |
+    Website for a film production company
+    Design: brand unit
+  large: true
+  image: mxr3.jpg
+  color: green
+
+- name: Independent Space Index 2022
+  year: 2022
+  url: 'https://2022.independentspaceindex.at'
+  tech: 
+    - HTML
+    - SCSS
+    - Eleventy
+  type: 
+  text: 'Website for a festival program'
+  large: true
+  image: index22.jpg
+  color: orange
+
+- name: Period
+  year: 2021
+  url: 'https://period.at'
+  tech:
+    - HTML
+    - CSS
+    - JavaScript
+    - Kirby CMS
+  text: 'Quarterly online magazine for sustainability, equality and innovation'
+  type:
+    - Magazine
+  large: true
+  image: period2.jpg
+  color: orchid
+
+- name: Kevin Space
+  year: 2022
+  url: 'https://www.kevinspace.org'
+  tech: 
+    - HTML
+    - SCSS
+    - Kirby CMS
+  type: 
+  text: 'Relaunch of website for Kunstverein Kevin Space in collaboration with Sophia Stemshorn'
+
+- name: Spas Setun
+  year: 2021
+  url: 'https://spassetun.com'
+  tech:
+    - HTML
+    - CSS
+    - Kirby CMS
+  text: Website for a gallery in Moscow
+  type:
+    - Exhibition Archive
+
+- name: EXILE TV
+  year: 2021
+  url: 'https://tv.exilegallery.org'
+  tech:
+    - JavaScript
+    - SCSS
+    - Kirby CMS
+  text: Video player for a gallery in Vienna
+  type:
+    - Web App
+
+- name: Viennacontemporary City Map
+  year: 2021
+  url: 'https://www.viennacontemporary.at/map'
+  tech:
+    - JavaScript
+    - SCSS
+    - Kirby CMS
+  text: City map for viennacontemporary art fair
+  type:
+    - Map
+
+- name: Choose Your Future
+  year: 2021
+  url: 'http://joshuacitarella.com/chooseyourfuture'
+  tech:
+    - JavaScript
+    - SCSS
+    - Eleventy
+  text: >-
+    Work by Joshua Citarella, commissioned by KW Institute for Contemporary
+    Art as part of the exhibition Open Secret
+  type:
+    - Minisite
+    - Artwork
+  large: true
+  image: josh.jpg
+  color: salmon
+
+- name: Independent Space Index 2021
+  year: 2021
+  url: 'https://2021.independentspaceindex.at'
+  tech:
+    - JavaScript
+    - SCSS
+    - Eleventy
+  text: Website for festival program
+  type:
+    - Map
+    - Organization
+
+- name: Posen
+  year: 2021
+  url: 'https://www.posen.at'
+  tech:
+    - JavaScript
+    - Kirby CMS
+  text: Digital city map for Johanna Charlotte Trede
+  type:
+    - Map
+    - Artwork
+
+- name: Haus 2021
+  year: 2021
+  url: 'https://2021.haus.wien'
+  tech:
+    - JavaScript
+    - SCSS
+    - Eleventy
+  text: Website for a collaboratively organized annual exhibition format
+  type:
+    - Organization
+
+- name: ENTKUNSTUNG
+  year: 2021
+  url: 'https://entkunstung.com'
+  tech:
+    - JavaScript
+    - Kirby CMS
+  text: Print and online publication for art criticism and practice
+  type:
+    - Magazine
+    - Web shop
+  large: true
+  image: entkunstung.jpg
+  color: red
+
+# - name: Vodka Brunch
+#   year: 2021
+#   url: 'https://vodkabrunch.vercel.app/'
+#   tech:
+#     - HTML
+#     - CSS
+#     - Node
+#   text: Contibutions for my uni department's annual "Vodka Brunch"
+#   type:
+#     - Minisite
+
+- name: New Jörg
+  year: 2021
+  url: 'https://newjoerg.at'
+  tech:
+    - HTML
+    - CSS
+    - Kirby CMS
+  text: Web shop for an artist-run space
+  type:
+    - Exhibition Archive
+    - Web shop
+
+- name: Katharina Mokross
+  year: 2020
+  url: 'https://katharina-mokross.com'
+  tech:
+    - HTML
+    - CSS
+    - Kirby CMS
+  text: Portfolio
+  type:
+    - Portfolio
+
+- name: Vitaly Bezpalov
+  year: 2020
+  url: 'https://vitalybezpalov.com'
+  tech:
+    - HTML
+    - CSS
+    - JavaScript
+  text: Artist portfolio
+  type:
+    - Portfolio
+
+- name: Independent Space Index 2020
+  year: 2020
+  url: 'https://2020.independentspaceindex.at'
+  tech:
+    - JavaScript
+  text: Website for festival program
+  type:
+    - Organization
+    - Map
+
+# - name: no-border-radius
+#   year: 2020
+#   url: 'https://github.com/moevbiz/no-border-radius'
+#   tech:
+#     - JavaScript
+#   text: Browser extension
+#   type:
+#     - Browser Extension
+
+# - name: Chimera
+#   year: 2020
+#   url: 'https://chimera.is'
+#   tech:
+#     - HTML
+#     - Node
+#   text: Representation channel for a transdisciplinary community-based platform
+#   type:
+#     - Organization
+
+- name: bingo.computer
+  year: 2020
+  url: 'https://bingo.computer'
+  tech:
+    - JavaScript
+  text: Parked Domain
+  type:
+    - Minisite
+
+- name: Haus 2020
+  year: 2020
+  url: 'https://2020.haus.wien'
+  tech:
+    - HTML
+    - CSS
+    - JavaScript
+    - Kirby CMS
+  text: Website for a collaboratively organized annual exhibition format
+  type:
+    - Organization
+
+- name: Katharina Brandl
+  year: 2020
+  url: 'https://katharinabrandl.at'
+  tech:
+    - HTML
+    - CSS
+    - Kirby CMS
+  text: Portfolio
+  type:
+    - Portfolio
+
+- name: Cherish
+  year: 2020
+  url: 'https://cherishhhh.ch'
+  tech:
+    - HTML
+    - CSS
+  text: Website for a project space in Geneva
+  type:
+    - Exhibition Archive
+
+- name: Spouse
+  year: 2020
+  url: 'https://spousevienna.com'
+  tech:
+    - HTML
+    - CSS
+  text: Website for a gallery space in Vienna
+  type:
+    - Exhibition Archive
+
+# - name: Linkfish
+#   year: 2020
+#   url: 'https://github.com/moevbiz/linkfish'
+#   tech:
+#     - JavaScript
+#   text: A Google Chrome extension to help organise bookmarks more consciously
+#   type:
+#     - Browser Extension
+
+- name: moev.biz
+  year: 2019
+  url: 'https://moev.biz'
+  tech:
+    - HTML
+    - CSS
+    - Eleventy
+  text: This website
+  type:
+    - Portfolio
+
+- name: Kulturherbst Neubau
+  year: 2019
+  url: 'https://kulturherbst.riotfestival.at'
+  tech:
+    - JavaScript
+  text: Interactive map for a festival program
+  type:
+    - Organization
+    - Map
+
+# - name: Hugo Zorn
+#   year: 2019
+#   url: 'https://hugozorn.com'
+#   tech:
+#     - HTML
+#     - CSS
+#     - JavaScript
+#     - Kirby CMS
+#   text: Website for an open structured platform for contemporary art
+#   type:
+#     - Magazine
+
+- name: Independent Space Index 2019
+  year: 2019
+  url: 'https://independentspaceindex.at/2019'
+  tech:
+    - HTML
+    - CSS
+    - JavaScript
+  text: Website for a festival program
+  type:
+    - Organization
+    - Map
+
+# - name: Bruno Mokross
+#   year: 2019
+#   url: 'https://brunomokross.de'
+#   tech:
+#     - HTML
+#     - PHP
+#   text: My personal website
+#   type:
+#     - Portfolio
+
+- name: Lily Robert
+  year: 2019
+  url: 'https://lilyrobert.com'
+  tech:
+    - HTML
+    - CSS
+    - Kirby CMS
+  text: Website for a gallery in Paris
+  type:
+    - Exhibition Archive
+
+- name: school
+  year: 2019
+  url: 'https://weloveschool.org'
+  tech:
+    - HTML
+    - CSS
+    - JavaScript
+  text: Website for a project space in Vienna
+  type:
+    - Exhibition Archive
+
+- name: Independent Space Index 2018
+  year: 2018
+  url: 'https://independentspaceindex.at/2018'
+  tech:
+    - HTML
+    - CSS
+    - Kirby CMS
+  text: Website for festival program
+  type:
+    - Organization
+
+- name: Gazebo
+  year: 2018
+  url: 'https://gazebo.site'
+  tech:
+    - Node
+  text: Website for an exhibition series in public pavilions
+  type:
+    - Organization
+
+# - name: Edin Zenun
+#   year: 2018
+#   url: 'https://edinzenun.at'
+#   tech:
+#     - HTML
+#     - CSS
+#     - Kirby CMS
+#   text: Artist portfolio
+#   type:
+#     - Portfolio
+
+- name: Independent Space Index
+  year: 2017
+  url: 'https://independentspaceindex.at'
+  tech:
+    - HTML
+    - CSS
+    - Kirby CMS
+  text: >-
+    Website for a networking initiative between independent art spaces in
+    Vienna
+  type:
+    - Organization
+    - Map
+
+# - name: Kevin Space
+#   year: 2017
+#   url: 'https://www.kevinspace.org'
+#   tech:
+#     - HTML
+#     - CSS
+#   text: Website for a project space in Vienna
+#   type:
+#     - Exhibition Archive
+
+- name: Pina
+  year: 2017
+  url: 'https://pinavienna.eu'
+  tech:
+    - HTML
+    - CSS
+  text: Website for a non-commercial gallery space in Vienna
+  type:
+    - Exhibition Archive

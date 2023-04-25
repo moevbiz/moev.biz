@@ -1,0 +1,49 @@
+---js
+{
+  title: "moev.biz",
+  currentDate: function() {
+    return (new Date()).toLocaleString("de-AT", {timeZone: "Europe/Vienna"});
+  },
+  layout: "layouts/base"
+}
+---
+
+<ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-8 px-6">
+  {%- for item in sites -%}
+  <a class="link" 
+  href="{{ item.url }}" 
+  target="_blank"
+  noopener
+  noreferrer
+  data-frame-info-top="
+    <span class='name'>{{ item.name }}</span>
+    <a href='{{ item.url }}'>🔗 {{ item.url }}</a>
+  "
+  data-frame-info-btm="
+    <span class='name'>{{ item.name }}</span>
+    {% for tech in item.tech %}
+    <div class='tech'>
+        <i data-tech='{{ tech }}'></i>
+        <span class='techname'>{{ tech }}</span>
+    </div>
+    {% endfor %}
+    "
+    >
+      <li class="aspect-video flex flex-col justify-between pt-3 pb-5 relative border-y -mt-px">
+        <h2>{{ item.name }}</h2>
+        <p class="opacity-50 text-sm">{{ item.text }}</p>
+        <div class="absolute top-[2px] left-0 w-full h-[1px] flex overflow-hidden">
+          {% for tech in item.tech %}
+            <i 
+            class="w-full"
+            data-tech="{{ tech }}"
+            >
+            </i>
+          {% endfor %}
+        </div>
+      </li>
+    </a>
+  {% endfor %}
+</ul>
+
+{% include 'partials/frame.njk' %}

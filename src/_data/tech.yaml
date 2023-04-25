@@ -1,0 +1,20 @@
+- name: HTML
+  color: green
+- name: CSS
+  color: red
+- name: SCSS
+  color: deeppink
+- name: Tailwind
+  color: deepskyblue
+- name: JavaScript
+  color: goldenrod
+- name: Alpine.js
+  color: cadetblue
+- name: Node
+  color: purple
+- name: PHP
+  color: blue
+- name: Kirby CMS
+  color: black
+- name: Eleventy
+  color: grey
