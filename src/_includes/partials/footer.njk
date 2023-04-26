@@ -1,18 +1,34 @@
 <footer class="footer">
 
+{# 
 <a href="https://yesterweb.org/no-to-web3/">
     <img src="assets/images/roly-saynotoweb3.gif" alt="">
-</a>
+</a> 
+#}
 
-<a class="c" href="https://moev.biz" style="margin-right: 1rem">&copy; moev.biz</a>
+<div class="text-center uppercase text-sm p-4 [&_span:not([data-no-op])]:opacity-30">
+    <div class="flex gap-4 justify-center">
+        <span data-no-op>🦆</span>
+        <span>&copy; 17-23</span>
+        <span>
+            moev.biz
+        </span>
+        <span>
+            favoriten, vienna, austria
+        </span>
+        <span>{{ currentDate() }}</span>
+    </div>
+    <div class="flex gap-4 justify-center">
+    </div>
+</div>
 
-<span class="d" style="margin-right: 1rem">updated: {{ currentDate() }}</span>
 
-{%- for item in tech -%}
+
+{# {%- for item in tech -%}
 <div class="tech">
     <i data-tech="{{ item.name }}"></i>
     <span class="techname">{{ item.name }}</span>
 </div>
-{%- endfor -%}
+{%- endfor -%} #}
 
 </footer>

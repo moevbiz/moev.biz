@@ -141,7 +141,7 @@
     - JavaScript
     - SCSS
     - Eleventy
-  text: Website for festival program
+  text: Website for a festival program
   type:
     - Map
     - Organization
@@ -232,7 +232,7 @@
   url: 'https://2020.independentspaceindex.at'
   tech:
     - JavaScript
-  text: Website for festival program
+  text: Website for a festival program
   type:
     - Organization
     - Map
@@ -401,7 +401,7 @@
     - HTML
     - CSS
     - Kirby CMS
-  text: Website for festival program
+  text: Website for a festival program
   type:
     - Organization
 

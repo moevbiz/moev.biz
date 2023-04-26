@@ -1,3 +1,165 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body.frame-visible main,
+body.frame-visible header,
+body.frame-visible footer {
+    filter: blur(4px);
+}
+
+#frame-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: opacity 0.05s linear;
+}
+  
+  .loader-wrapper {
+    position: absolute;
+    pointer-events: none;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader {
+    width: 30px;
+    height: 30px;
+    border: 5px solid lightgrey;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1.5s linear infinite;
+  }
+  
+  .frame-loaded .loader-wrapper {
+    display: none;
+  }
+  
+  @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  } 
+  
+  body.frame-visible #frame-container {
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  #frame-wrapper {
+    position: fixed;
+    width: 75%;
+    height: 75%;
+    min-width: 150px !important;
+    max-width: 80% !important;
+    transform: scale(0.65);
+    transition: transform 0.05s linear;
+    background-color: white;
+  }
+  
+  #frame-wrapper.visible {
+    opacity: 1;
+    pointer-events: all;
+    transform: scale(1);
+  }
+  
+  #frame {
+    width: 133.3333%;
+    height: 133.3333%;
+    /* background: white; */
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    border: none;
+    transform: scale(0.75);
+    transform-origin: top left;
+    pointer-events: all;
+  
+    transition: all 0.1s linear;
+  }
+  
+  #frame-wrapper.hidden #frame {
+    pointer-events: none;
+  }
+  
+  #frame-info-top {
+    position: fixed;
+    top: 8%;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    text-align: center;
+    padding: 0 20px;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  #frame-info-bottom {
+    position: fixed;
+    top: 90%;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  #close-frame {
+    transform: scale(1.25);
+    transform-origin: top left;
+  }
+  
+  .is-being-resized #frame {
+    pointer-events: none;
+  }
+  
+  .resizeHandle {
+    height: 100%;
+    width: 8px;
+    background: red;
+    opacity: 0;
+  }
+  
+  .resizeHandle:hover {
+    opacity: 1;
+    cursor: col-resize;
+  }
+  
+  .is-being-resized .resizeHandle {
+    opacity: 0;
+  }
+  
+  .resizeHandle-e {
+    position: absolute;
+    z-index: 10000;
+    left: -3px;
+    height: 100%;
+  }
+  
+  .resizeHandle-w {
+    position: absolute;
+    z-index: 10000;
+    right: -3px;
+    height: 100%;
+  }
+  
+  #framelink {
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    padding: 10px;
+  }

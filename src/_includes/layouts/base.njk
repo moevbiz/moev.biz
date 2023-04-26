@@ -7,12 +7,15 @@
     <title>moev.biz</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦆</text></svg>">
     <style>
+      i[data-tech]{width: 100%; height: 100; position: relative; overflow: hidden;}
       {%- for item in tech -%}
       [data-tech="{{ item.name }}"]::after {
         content: " ";
         width: 100%;
         height: 100%;
         position: absolute;
+        top: 0;
+        left: 0;
         background: radial-gradient(white 5%, {{ item.color }});
       }
       {%- endfor -%}
@@ -20,15 +23,17 @@
   </head>
   <body>
     {% include "partials/header.njk" %}
-    <main>
+    <main class="mb-12">
       <div class="main-content p-3">
         {{ content | safe }}
       </div>
     </main>
 
     {% include "partials/footer.njk" %}
+    {% include 'partials/frame.njk' %}
 
     <script src="{{ '/assets/js/scripts.js' | url }}"></script>
+
 
   </body>
 </html>

@@ -9,6 +9,27 @@ const frameInfoBtm = document.querySelector('#frame-info-bottom');
 const links = document.querySelectorAll('.main-content a.link');
 const closeBtn = document.querySelector('#close-frame');
 
+const shuffleArray = array => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+}
+
+function chChChChanges() {
+    let el = document.querySelector('#description');
+    let options = el.dataset.options.split(',');
+    console.log(options);
+    shuffleArray(options);
+    el.innerText = options[0] == '' ? options[0] : options[1];
+    el.dataset.options = options.toString(', ');
+    window.setTimeout(chChChChanges, '20000');
+}
+
+chChChChanges();
+
 function addClickEventListener(element, clickEvent) {
     const dragTolerance = 6;
     let startX;
