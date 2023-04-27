@@ -127,8 +127,14 @@ body.frame-visible footer {
   
   .resizeHandle {
     height: 100%;
-    width: 8px;
-    background: red;
+    width: 6px;
+    background: repeating-linear-gradient(
+      45deg,
+      lightgray,
+      lightgray 2px,
+      gray 2px,
+      gray 3px
+    );
     opacity: 0;
   }
   

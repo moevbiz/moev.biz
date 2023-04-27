@@ -1,4 +1,14 @@
-- name: ILIT
+- name: Pinacoteca
+  year: 2023
+  url: 'https://pinacoteca.at'
+  tech:
+    - Tailwind
+    - Alpine.js
+    - Kirby CMS
+  text: | 
+    Website for an artist association
+
+- name: Infrastructuring Libraries in Transformation
   year: 2023
   url: 'https://transforminglibraries.net'
   tech:
@@ -7,7 +17,7 @@
     - Kirby CMS
   text: | 
     Website for an academic research project
-    Design: Alessia Scuderi
+    • Design: Alessia Scuderi
 
 - name: Weitblick
   year: 2022
@@ -18,7 +28,7 @@
     - Kirby CMS
   text: |
     Blog on trends and topics in the areas of New Work and Corporate Innovation
-    Design: Period
+    • Design: Period
 
 - name: Dishes
   year: 2022
@@ -29,7 +39,7 @@
     - Eleventy
   text: |
     Minisite for an event series in Vienna
-    Design: Marlene Kager
+    • Design: Marlene Kager
 
 - name: MXR
   year: 2021
@@ -41,7 +51,7 @@
     - Kirby CMS
   text: |
     Website for a film production company
-    Design: brand unit
+    • Design: brand unit
   large: true
   image: mxr3.jpg
   color: green
@@ -82,7 +92,7 @@
     - SCSS
     - Kirby CMS
   type: 
-  text: 'Relaunch of website for Kunstverein Kevin Space in collaboration with Sophia Stemshorn'
+  text: 'Relaunch of website for Kunstverein Kevin Space • With Sophia Stemshorn'
 
 - name: Spas Setun
   year: 2021
@@ -125,8 +135,7 @@
     - SCSS
     - Eleventy
   text: >-
-    Work by Joshua Citarella, commissioned by KW Institute for Contemporary
-    Art as part of the exhibition Open Secret
+    Interactive wiki for Joshua Citarella
   type:
     - Minisite
     - Artwork
@@ -164,7 +173,7 @@
     - JavaScript
     - SCSS
     - Eleventy
-  text: Website for a collaboratively organized annual exhibition format
+  text: Website for an exhibition project
   type:
     - Organization
 
@@ -212,7 +221,7 @@
     - HTML
     - CSS
     - Kirby CMS
-  text: Portfolio
+  text: Portfolio for Katharina Mokross
   type:
     - Portfolio
 
@@ -223,7 +232,7 @@
     - HTML
     - CSS
     - JavaScript
-  text: Artist portfolio
+  text: Artist portfolio for Vitaly Bezpalov
   type:
     - Portfolio
 
@@ -261,7 +270,7 @@
   url: 'https://bingo.computer'
   tech:
     - JavaScript
-  text: Parked Domain
+  text: Leisure activity for a parked domain
   type:
     - Minisite
 
@@ -273,7 +282,7 @@
     - CSS
     - JavaScript
     - Kirby CMS
-  text: Website for a collaboratively organized annual exhibition format
+  text: Website for an exhibition project
   type:
     - Organization
 
@@ -433,8 +442,7 @@
     - CSS
     - Kirby CMS
   text: >-
-    Website for a networking initiative between independent art spaces in
-    Vienna
+    Website for a network of art spaces in Vienna
   type:
     - Organization
     - Map
