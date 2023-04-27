@@ -9,9 +9,11 @@
 {% include 'partials/htmlhead.njk' %}
 
     <main class="mb-12">
-      <div class="main-content sm:p-3">
-        {{ content | safe }}
-      </div>
+        <div class="main-content p-3 sm:p-8">
+            <div class="max-w-[66ch] [&_h1]:my-4 [&_p]:mb-4 [&_p]:text-[gray]">
+                {{ content | safe }}
+            </div>
+        </div>
     </main>
 
 {% include 'partials/htmlfoot.njk' %}

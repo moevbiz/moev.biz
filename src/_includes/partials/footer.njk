@@ -6,7 +6,15 @@
 </a> 
 #}
 
-<div class="text-center uppercase text-sm p-4 [&_span:not([data-no-op])]:opacity-30">
+<div class="text-center uppercase text-sm p-3 sm:p-8 [&_span:not([data-no-op])]:opacity-30 flex flex-wrap justify-between">
+    <div class="flex gap-4 justify-center">
+        <span>
+            <a href="{{ '/imprint' | url }}">Imprint</a>
+        </span>
+        <span>
+            <a href="{{ '/privacy' | url }}">Privacy</a>
+        </span>
+    </div>
     <div class="flex gap-4 justify-center">
         <span data-no-op>🦆</span>
         <span>&copy; 17-23</span>
@@ -14,11 +22,9 @@
             moev.biz
         </span>
         <span>
-            favoriten, vienna, austria
+            vienna, austria
         </span>
         <span>{{ currentDate() }}</span>
-    </div>
-    <div class="flex gap-4 justify-center">
     </div>
 </div>
 
