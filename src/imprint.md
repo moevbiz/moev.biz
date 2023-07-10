@@ -5,10 +5,10 @@ layout: layouts/prose
 
 # Imprint
 
-Verantwortlich für den Inhalt:
 Bruno Mokross
-Große Neugasse 44/2
-1040 Wien
+Malborghetgasse 40/12
+1100 Wien
++4367761641821
 moev.biz@moev.biz
 
 # Copyright
