@@ -1,3 +1,13 @@
+- name: CLOSER
+  year: 2023
+  url: 'https://closer.wien'
+  tech:
+    - Tailwind
+    - Alpine.js
+    - Kirby CMS
+  text: |
+    Website for a networking + outreach initiative in development
+
 - name: fjk3
   year: 2023
   url: 'https://fjk3.com'
@@ -6,7 +16,7 @@
     - Alpine.js
     - Kirby CMS
   text: |
-    Website for a private non-profit institution in Vienna • Design: Hannah Sakai + Studio TiD
+    Website for a private institution in Vienna • Design: Hannah Sakai + Studio TiD
 
 - name: Independent Space Index 2023
   year: 2023
