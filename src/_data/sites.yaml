@@ -48,9 +48,9 @@
     Website for an academic research project
     • Design: Alessia Scuderi
 
-- name: Weitblick
+- name: period. Interactive
   year: 2022
-  url: 'https://weitblick.period.at'
+  url: 'https://interactive.period.at'
   tech:
     - Tailwind
     - Alpine.js
