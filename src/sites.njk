@@ -1,0 +1,46 @@
+---
+layout: layouts/base
+---
+
+<ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 px-6">
+  {%- for item in sites -%}
+  <a 
+  class="link | group" 
+  href="{{ item.url }}" 
+  target="_blank"
+  noopener
+  noreferrer
+  data-frame-info-top="
+    {# <span class='name'>{{ item.name }}</span>
+    <a href='{{ item.url }}'>{{ item.url }}</a> #}
+  "
+  data-frame-info-btm="
+  <div class='flex flex-wrap gap-4'>
+    <span class='name text-sm'>{{ item.name }}</span>
+    {% for tech in item.tech %}
+      <div class='flex gap-2 items-center'>
+        <div class='w-3 h-3 rounded-full relative overflow-hidden flex text-sm'>
+          <i class='w-full h-full' data-tech='{{ tech }}'></i>
+        </div>
+        <span class='techname opacity-50 text-sm'>{{ tech }}</span>
+      </div>
+    {% endfor %}
+    </div>
+    "
+    >
+      <li class="aspect-video flex flex-col justify-between pt-3 pb-5 relative">
+        <h2 class="transition-transform origin-top group-hover:translate-y-[2px]">{{ item.name }}</h2>
+        <p class="opacity-40 text-sm group-hover:opacity-80 group-hover:-translate-y-[1px] transition-all">{{ item.text }}</p>
+        <div class="absolute top-[2px] left-0 w-full h-[1px] origin-top group-hover:scale-y-[2] transition-transform flex overflow-hidden">
+          {% for tech in item.tech %}
+            <i 
+            class="w-full"
+            data-tech="{{ tech }}"
+            >
+            </i>
+          {% endfor %}
+        </div>
+      </li>
+    </a>
+  {% endfor %}
+</ul>

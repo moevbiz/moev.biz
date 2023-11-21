@@ -1,8 +1,10 @@
-<header class="p-5 sm:p-8 mb-28 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-1 sm:gap-y-8 gap-x-8">
+<header class="p-5 sm:p-8 mb-28">
     <a href="https://moev.biz">
         <h1>moev.biz</h1>
     </a>
-    <p id="description" data-options="{% for field in fields %}{{ field }}, {% endfor %}"></p>
-    <a href="mailto:moev.biz@moev.biz" class="">moev.biz@moev.biz</a>
+    <p id="description" data-options="{% for field in fields %}{{ field }}{%if (loop.index < fields.length) %},{%endif%} {% endfor %}"></p>
+    <p>
+        <a href="mailto:moev.biz@moev.biz" class="">moev.biz@moev.biz</a>
+    </p>
     <a href="tel:+4367761641821" class="">+4367761641821</a>
 </header>

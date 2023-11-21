@@ -6,7 +6,7 @@
 </a> 
 #}
 
-<div class="sm:text-center uppercase text-sm p-3 sm:p-8 [&_span:not([data-no-op])]:opacity-30 flex flex-col sm:flex-row flex-wrap gap-y-4 justify-between">
+<footer class="sm:text-center uppercase text-sm p-3 sm:p-8 [&_span:not([data-no-op])]:opacity-30 flex flex-col sm:flex-row flex-wrap gap-y-4 justify-between">
     <div class="flex flex-wrap gap-4 sm:justify-center">
         <span>
             <a href="{{ '/imprint' | url }}">Imprint</a>
@@ -16,7 +16,7 @@
         </span>
     </div>
     <div class="flex flex-wrap flex-col sm:flex-row gap-4 sm:justify-center">
-        <span data-no-op>🦆</span>
+        <span data-no-op class="grayscale">🦆</span>
         <span>&copy; 17-23</span>
         <span>
             moev.biz
@@ -24,9 +24,9 @@
         <span>
             vienna, austria
         </span>
-        <span>{{ currentDate() }}</span>
+        <span>last build {{ currentDate() }} cet</span>
     </div>
-</div>
+</footer>
 
 
 
