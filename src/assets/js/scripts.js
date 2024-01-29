@@ -6,7 +6,7 @@ const frame = document.querySelector('#frame');
 const frameLink = document.querySelector('#framelink');
 const frameInfoTop = document.querySelector('#frame-info-top');
 const frameInfoBtm = document.querySelector('#frame-info-bottom');
-const links = document.querySelectorAll('.main-content a.link');
+const links = document.querySelectorAll('.main-content a[data-frame-info-btm]');
 const closeBtn = document.querySelector('#close-frame');
 
 const shuffleArray = array => {
@@ -50,7 +50,7 @@ function addClickEventListener(element, clickEvent) {
     });
 }
 
-function openIframe(link, infoTop, infoBtm) {
+function openIframe(link, infoTop = '', infoBtm = '') {
     frame.parentElement.style.width = '75%';
     document.body.classList.add('frame-visible');
     document.body.style.overflow = 'hidden';

@@ -6,7 +6,7 @@
 </a> 
 #}
 
-<footer class="sm:text-center uppercase text-sm p-3 sm:p-8 [&_span:not([data-no-op])]:opacity-30 flex flex-col sm:flex-row flex-wrap gap-y-4 justify-between">
+<footer class="sm:text-center uppercase tracking-tight text-sm p-3 sm:p-8 [&_span:not([data-no-op])]:opacity-30 flex flex-col sm:flex-row flex-wrap gap-y-4 justify-between">
     <div class="flex flex-wrap gap-4 sm:justify-center">
         <span>
             <a href="{{ '/imprint' | url }}">Imprint</a>
@@ -15,16 +15,15 @@
             <a href="{{ '/privacy' | url }}">Privacy</a>
         </span>
     </div>
-    <div class="flex flex-wrap flex-col sm:flex-row gap-4 sm:justify-center">
-        <span>&copy; 17-24</span>
+    <div class="flex flex-wrap flex-col sm:flex-row gap-x-4 sm:justify-center grayscale">
         <span>
-            moev.biz
+            &copy; 17-24 moev.biz
         </span>
         <span>
-            vienna, austria
+            📍 vienna, austria
         </span>
         <span>last build {{ currentDate() }} cet</span>
-        <span data-no-op class="grayscale"><a href="https://bruno.earth">🌍</a></span>
+        {# <span data-no-op class="grayscale"><a href="https://bruno.earth">🌍</a></span> #}
     </div>
 </footer>
 
