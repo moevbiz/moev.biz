@@ -27,6 +27,7 @@ function chChChChanges() {
     el.dataset.options = options.toString(', ');
 }
 
+chChChChanges();
 window.setInterval(chChChChanges, '10000');
 
 function addClickEventListener(element, clickEvent) {
