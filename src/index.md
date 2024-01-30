@@ -2,7 +2,7 @@
 layout: layouts/prose
 ---
 
-I work with artists, studios, designers, and individuals to create fully tailored websites with a focus on simplicity, usability, and sustainability.
+I am a developer working with artists, studios, designers, and individuals to create fully tailored websites with a focus on simplicity, usability, and sustainability.
 
 I enjoy using [Kirby CMS](https://getkirby.com/), Alpine JS and Tailwind. Other relevant experience includes serverside development (Eleventy, Node.js, PHP, Python), CSS (SASS), JavaScript (jQuery, TypeScript), Third-party integrations (Mailchimp, Shopify, Vimeo, Leaflet, Mapbox, Indexhibit), and technical consultation. I am also proficient with Adobe Suite.
 
