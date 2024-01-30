@@ -2,7 +2,7 @@
     <a href="https://moev.biz">
         <h1>moev.biz</h1>
     </a>
-    <p id="description" data-options="{% for field in fields %}{{ field }}{%if (loop.index < fields.length) %},{%endif%} {% endfor %}"></p>
+    <p id="description" data-options="{% for field in fields %}{{ field }}{%if (loop.index < fields.length) %},{%endif%} {% endfor %}">{{ fields[1] }}</p>
     <p>
         <a href="mailto:moev.biz@moev.biz" class="">moev.biz@moev.biz</a>
     </p>

@@ -25,10 +25,9 @@ function chChChChanges() {
     shuffleArray(options);
     el.innerText = options[0] == '' ? options[0] : options[1];
     el.dataset.options = options.toString(', ');
-    window.setTimeout(chChChChanges, '20000');
 }
 
-chChChChanges();
+window.setInterval(chChChChanges, '10000');
 
 function addClickEventListener(element, clickEvent) {
     const dragTolerance = 6;
