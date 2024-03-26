@@ -1,3 +1,32 @@
+- name: Hyperreality
+  year: 2024
+  url: 'https://hyperreality.at'
+  tech:
+    - Tailwind
+    - Alpine.js
+    - Kirby CMS
+  text: |
+    Website for an annual music festival taking place in an off-location in Vienna. Design: Hyperreality
+  
+- name: XR-Atlas
+  year: 2024
+  url: 'https://xr-atlas.org'
+  tech:
+    - JavaScript
+    - Kirby CMS
+  text: |
+    Data visualization for an educational online platform. Design: Alessia Scuderi
+
+- name: Pech
+  year: 2024
+  url: 'https://pech.is'
+  tech:
+    - Tailwind
+    - Alpine.js
+    - Kirby CMS
+  text: |
+    Identity + website for an exhibition space
+
 - name: CLOSER
   year: 2023
   url: 'https://closer.wien'
@@ -6,7 +35,7 @@
     - Alpine.js
     - Kirby CMS
   text: |
-    Website for a networking + outreach initiative in development
+    Identity + website for a networking and outreach initiative in development
 
 - name: fjk3
   year: 2023
@@ -16,7 +45,7 @@
     - Alpine.js
     - Kirby CMS
   text: |
-    Website for a private institution in Vienna • Design: Hannah Sakai + Studio TiD
+    Website for a private institution in Vienna. Design: Hannah Sakai + Studio TiD
 
 - name: Independent Space Index 2023
   year: 2023
@@ -25,7 +54,7 @@
     - SCSS
     - Eleventy
   text: | 
-    Website for a festival program • Graphics: Hannah Sakai • Development: Barnabás Bacsi / Camp Notes
+    Website for a festival program. Graphics: Hannah Sakai. Development: Barnabás Bacsi / Camp Notes
 
 - name: Pinacoteca
   year: 2023
@@ -45,8 +74,7 @@
     - Alpine.js
     - Kirby CMS
   text: | 
-    Website for an academic research project
-    • Design: Alessia Scuderi
+    Website for an academic research project. Design: Alessia Scuderi
 
 - name: period. Interactive
   year: 2022
@@ -56,8 +84,7 @@
     - Alpine.js
     - Kirby CMS
   text: |
-    Blog on trends and topics in the areas of New Work and Corporate Innovation
-    • Design: Period
+    Website for a company for New Work and Corporate Innovation. Design: Period
 
 - name: Dishes
   year: 2022
@@ -67,8 +94,8 @@
     - Alpine.js
     - Eleventy
   text: |
-    Minisite for an event series in Vienna
-    • Design: Marlene Kager
+    Minisite for an event series in Vienna. Design: Marlene Kager
+  online: false
 
 - name: MXR
   year: 2021
@@ -79,11 +106,7 @@
     - SCSS
     - Kirby CMS
   text: |
-    Website for a film production company
-    • Design: brand unit
-  large: true
-  image: mxr3.jpg
-  color: green
+    Website for a film production company. Design: brand unit
 
 - name: Independent Space Index 2022
   year: 2022
@@ -94,9 +117,6 @@
     - Eleventy
   type: 
   text: 'Website for a festival program'
-  large: true
-  image: index22.jpg
-  color: orange
 
 - name: Period
   year: 2021
@@ -121,7 +141,7 @@
     - SCSS
     - Kirby CMS
   type: 
-  text: 'Relaunch of website for Kunstverein Kevin Space • With Sophia Stemshorn'
+  text: 'Relaunch of website for Kunstverein Kevin Space. With Sophia Stemshorn'
 
 - name: Spas Setun
   year: 2021
@@ -216,20 +236,18 @@
   type:
     - Magazine
     - Web shop
-  large: true
-  image: entkunstung.jpg
-  color: red
 
-# - name: Vodka Brunch
-#   year: 2021
-#   url: 'https://vodkabrunch.vercel.app/'
-#   tech:
-#     - HTML
-#     - CSS
-#     - Node
-#   text: Contibutions for my uni department's annual "Vodka Brunch"
-#   type:
-#     - Minisite
+- name: Vodka Brunch
+  year: 2021
+  url: 'https://vodkabrunch.vercel.app/'
+  tech:
+    - HTML
+    - CSS
+    - Node
+  text: Contibutions for my uni department's annual "Vodka Brunch"
+  type:
+    - Minisite
+  online: false
 
 - name: New Jörg
   year: 2021
@@ -284,15 +302,16 @@
 #   type:
 #     - Browser Extension
 
-# - name: Chimera
-#   year: 2020
-#   url: 'https://chimera.is'
-#   tech:
-#     - HTML
-#     - Node
-#   text: Representation channel for a transdisciplinary community-based platform
-#   type:
-#     - Organization
+- name: Chimera
+  year: 2020
+  url: 'https://chimera.is'
+  tech:
+    - HTML
+    - Node
+  text: Website for a transdisciplinary community-based platform
+  type:
+    - Organization
+  online: false
 
 - name: bingo.computer
   year: 2020
@@ -376,17 +395,18 @@
     - Organization
     - Map
 
-# - name: Hugo Zorn
-#   year: 2019
-#   url: 'https://hugozorn.com'
-#   tech:
-#     - HTML
-#     - CSS
-#     - JavaScript
-#     - Kirby CMS
-#   text: Website for an open structured platform for contemporary art
-#   type:
-#     - Magazine
+- name: Hugo Zorn
+  year: 2019
+  url: 'https://hugozorn.com'
+  tech:
+    - HTML
+    - CSS
+    - JavaScript
+    - Kirby CMS
+  text: Website for a platform for contemporary art
+  type:
+    - Magazine
+  online: false
 
 - name: Independent Space Index 2019
   year: 2019
@@ -443,14 +463,14 @@
   type:
     - Organization
 
-- name: Gazebo
-  year: 2018
-  url: 'https://gazebo.site'
-  tech:
-    - Node
-  text: Website for an exhibition series in public pavilions
-  type:
-    - Organization
+# - name: Gazebo
+#   year: 2018
+#   url: 'https://gazebo.site'
+#   tech:
+#     - Node
+#   text: Website for an exhibition series in public pavilions
+#   type:
+#     - Organization
 
 # - name: Edin Zenun
 #   year: 2018
