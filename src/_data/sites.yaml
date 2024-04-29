@@ -1,6 +1,6 @@
 - name: Independent Space Index 2024
   year: 2024
-  url: 'https://2024.index.wien'
+  url: 'https://2024.independentspaceindex.at'
   tech:
     - Tailwind
     - Alpine.js
