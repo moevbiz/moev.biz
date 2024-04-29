@@ -1,3 +1,13 @@
+- name: Independent Space Index 2024
+  year: 2024
+  url: 'https://2024.index.wien'
+  tech:
+    - Tailwind
+    - Alpine.js
+    - Kirby CMS
+  text: |
+    Website for a festival program. Design: with Sebastian Koeck
+
 - name: Hyperreality
   year: 2024
   url: 'https://hyperreality.at'
@@ -164,6 +174,7 @@
   text: Video player for a gallery in Vienna
   type:
     - Web App
+  online: false
 
 - name: Viennacontemporary City Map
   year: 2021
