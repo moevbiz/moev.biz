@@ -1,43 +1,43 @@
-- name: Independent Space Index
-  year: 2017-2024
-  url: 'https://independentspaceindex.at'
-  tech:
-    - HTML
-    - CSS
-    - Kirby CMS
-  text: Visual identity and web development for the network of independent spaces in Vienna
-  type:
-    - Organization
-    - Map
+# - name: Independent Space Index
+#   year: 2017-2024
+#   url: 'https://independentspaceindex.at'
+#   tech:
+#     - HTML
+#     - CSS
+#     - Kirby CMS
+#   text: Visual identity and web development for the network of independent spaces in Vienna
+#   type:
+#     - Organization
+#     - Map
 
-- name: fjk3
-  year: 2023
-  url: 'https://fjk3.com'
-  tech:
-    - Tailwind
-    - Alpine.js
-    - Kirby CMS
-  text: |
-    Website for a private institution in Vienna. Design: Hannah Sakai + Studio TiD
+# - name: fjk3
+#   year: 2023
+#   url: 'https://fjk3.com'
+#   tech:
+#     - Tailwind
+#     - Alpine.js
+#     - Kirby CMS
+#   text: |
+#     Website for a private institution in Vienna. Design: Hannah Sakai + Studio TiD
 
-- name: period. Interactive
-  year: 2022-2024
-  url: 'https://interactive.period.at'
-  tech:
-    - Tailwind
-    - Alpine.js
-    - Kirby CMS
-  text: |
-    Blog on trends and topics in the areas of New Work and Corporate Innovation. Design: Period
+# - name: period. Interactive
+#   year: 2022-2024
+#   url: 'https://interactive.period.at'
+#   tech:
+#     - Tailwind
+#     - Alpine.js
+#     - Kirby CMS
+#   text: |
+#     Blog on trends and topics in the areas of New Work and Corporate Innovation. Design: Period
 
-- name: ENTKUNSTUNG
-  year: 2021
-  url: 'https://entkunstung.com'
-  tech:
-    - JavaScript
-    - Kirby CMS
-  text: |
-    Web development for a print and online publication for art criticism and practice. Design: Entkunstung
-  type:
-    - Magazine
-    - Web shop
+# - name: ENTKUNSTUNG
+#   year: 2021
+#   url: 'https://entkunstung.com'
+#   tech:
+#     - JavaScript
+#     - Kirby CMS
+#   text: |
+#     Web development for a print and online publication for art criticism and practice. Design: Entkunstung
+#   type:
+#     - Magazine
+#     - Web shop

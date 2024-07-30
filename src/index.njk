@@ -1,7 +1,7 @@
 ---
 layout: layouts/base
 ---
-
+{% if featuredsites|length %}
 <ul class="grid lg:grid-cols-2 gap-7 mb-24">
 {%- for item in featuredsites -%}
   <a 
@@ -51,6 +51,7 @@ layout: layouts/base
     </a>
   {% endfor %}
 </ul>
+{% endif %}
 
 <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
   {%- for item in sites -%}
