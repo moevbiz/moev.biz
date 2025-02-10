@@ -1,3 +1,23 @@
+- name: Independent Space Index 2025
+  year: 2024
+  url: 'https://2025.index.wien'
+  tech:
+    - Tailwind
+    - Alpine.js
+    - Kirby CMS
+  text: |
+    Website for a festival program. Graphics: Alexandra Möllner
+
+- name: Luka Berchtold
+  year: 2024
+  url: 'https://lukaberchtold.com'
+  tech:
+    - Tailwind
+    - Alpine.js
+    - Kirby CMS
+  text: |
+    Artist portfoliio. Design: Sebastian Koeck
+
 - name: Independent Space Index 2024
   year: 2024
   url: 'https://2024.independentspaceindex.at'
@@ -17,6 +37,7 @@
     - Kirby CMS
   text: |
     Website for an annual music festival taking place in an off-location in Vienna. Design: Hyperreality
+  online: false
   
 - name: XR-Atlas
   year: 2024
@@ -117,6 +138,7 @@
     - Kirby CMS
   text: |
     Website for a film production company. Design: brand unit
+  online: false
 
 - name: Independent Space Index 2022
   year: 2022

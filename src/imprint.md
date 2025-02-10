@@ -6,9 +6,9 @@ layout: layouts/prose
 # Imprint
 
 Bruno Mokross
-Malborghetgasse 40/12
-1100 Wien
-+4367761641821
+Große Neugasse 44/2
+1040 Wien
++43 (0) 67761641821
 moev.biz@moev.biz
 
 # Copyright
