@@ -1,12 +1,19 @@
-<header class="p-5 sm:p-8 mb-28">
-    <div class="md:flex w-full justify-between">
+<header class="p-3 sm:p-6 mb-28">
+    <div class="md:grid grid-cols-4 w-full">
         <div class="">
             <a href="https://moev.biz">
                 {# <h1 class="inline">moev.biz</h1> #}
                 <span class="inline" id="description" data-options="{% for field in fields %}{{ field }}{%if (loop.index < fields.length) %},{%endif%} {% endfor %}">&nbsp;</span>
             </a>
         </div>
-        <div class="">
+        <div class="col-span-2">
+            <div class="text-gray-400">
+                for institutions, brands, artists, and creatives
+                <br> 
+                in the fields of visual arts and contemporary culture
+            </div>
+        </div>
+        <div class="w-full md:text-right">
             <p>
                 <a href="mailto:moev.biz@moev.biz" class="">moev.biz@moev.biz</a>
             </p>
