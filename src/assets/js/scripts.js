@@ -21,14 +21,13 @@ const shuffleArray = array => {
 function chChChChanges() {
     let el = document.querySelector('#description');
     let options = el.dataset.options.split(',');
-    console.log(options);
     shuffleArray(options);
     el.innerText = options[0] == '' ? options[0] : options[1];
     el.dataset.options = options.toString(', ');
 }
 
 chChChChanges();
-window.setInterval(chChChChanges, '10000');
+window.setInterval(chChChChanges, '3000');
 
 function addClickEventListener(element, clickEvent) {
     const dragTolerance = 6;
