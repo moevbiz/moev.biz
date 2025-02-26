@@ -59,7 +59,7 @@
     - Alpine.js
     - Kirby CMS
   text: |
-    Artist portfolio. Design: Sebastian Koeck
+    Portfolio for artist Luka Berchtold. Design: Sebastian Koeck
   roles:
     - Design
     - Development
@@ -214,7 +214,7 @@
     - CSS
     - JavaScript
     - Kirby CMS
-  text: 'Quarterly online magazine for sustainability, equality and innovation'
+  text: 'Website for a magazine for sustainability, equality and innovation'
   type:
     - Magazine
 
@@ -236,7 +236,7 @@
     - JavaScript
     - SCSS
     - Kirby CMS
-  text: Video player for a gallery in Vienna
+  text: Video player app for a gallery in Vienna
   type:
     - Web App
   disabled: true

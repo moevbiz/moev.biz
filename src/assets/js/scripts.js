@@ -9,8 +9,8 @@ const frameInfoBtm = document.querySelector('#frame-info-bottom');
 const links = document.querySelectorAll('.main-content a[data-frame-info-btm]');
 const closeBtn = document.querySelector('#close-frame');
 
-if (document.querySelector('#description').classList.contains('large')) {
-    fitty('#description');
+if (document.querySelector('.fitty')) {
+    fitty('.fitty');
 }
 
 const shuffleArray = array => {

@@ -1,21 +1,23 @@
 - name: Independent Space Index
   year: since 2017
-  text: Independent Space Index is the network and yearly festival of project spaces in Vienna, Austria, founded by a group of artists in 2017. The format is under active development, considering input from a large network of member spaces. As one of the main organizers, I have been responsible for day-to-day management, implementation of new structures, design and artistic direction, and the conceptualization and management of different events and formats like monthly meetings and international networking events.
+  text: | 
+    Independent Space Index is the network and yearly festival of project spaces in Vienna, Austria, founded by a group of artists in 2017. 
+    As one of the main organizers, I have been responsible for day-to-day management, implementation of new structures, design and artistic direction, and the conceptualization and management of different events and formats like monthly meetings and international networking events, considering input from a large network of member spaces. 
   web: https://independentspaceindex.at
 
 - name: Pech
   year: since 2024
-  text: Pech is an exhibition space for young contemporary art in Vienna, focusing on solo exhibitions that are produced in close collaboration with selected international artists. In 2024, I took on the role of artistic director, put together a small team, and started Pech.
+  text: Pech is an exhibition space for young contemporary art in Vienna, focusing on solo exhibitions that are produced in close collaboration with selected international artists. I founded Pech in 2024, building on my experience with the curatorial project Pina, and took on the role of artistic director. Pech works with a small network of frequent collaborators, mostly artists, who are involved in programming, curating, and handling day-to-day operations.
   web: https://pech.is
 
 - name: Pina
   year: 2017–2022
-  text: Pina was an exhibition space and curatorial project. As co-director of Pina, I have organized over 50 exhibitions with international contemporary artists in Vienna and abroad. In 2023, Pina closed and partially merged into Pech.
+  text: Pina was an exhibition space and curatorial project. As co-director of Pina, I have organized over 50 exhibitions with international contemporary artists in Vienna and abroad. In 2023, Pina closed, and its physical location was taken over by Pech.
   web: https://pinavienna.eu
 
 - name: CLOSER
   year: 2022
-  text: CLOSER is a networking initiative in development, which seeks to establish a welcome center in Vienna that connects international artists and art professionals. For CLOSER, I have created a visual identity and website, and helped organize various showcases and events.
+  text: CLOSER is a networking initiative in development, which seeks to establish a welcome center in Vienna that connects international artists and art professionals. For CLOSER, I have created a visual identity and website, co-organized a variety of showcases and events, and produced promotional material.
   web: https://closer.wien
 
 - name: Haus

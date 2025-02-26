@@ -1,0 +1,28 @@
+---
+layout: layouts/base
+---
+
+<div class="fixed top-0 left-[1rem] w-[calc(100vw-2rem)] h-[90vh] text-center flex justify-center items-center">
+    <div class="fitty leading-none">
+        moev.biz is now bingo.computer
+        <br>
+        redirecting in <span id="countdown"></span>
+    </div>
+</div>
+
+<script>
+    const counter = document.querySelector('#countdown');
+    let number = 7;
+
+    const countDown = () => {
+        number = --number;
+        console.log(number);
+        counter.innerText = number;
+        setTimeout(countDown, 1000);
+        if (number <= 0) {
+            number = 0;
+            window.location = 'https://bingo.computer'; 
+        }
+    }
+    countDown();
+</script>
