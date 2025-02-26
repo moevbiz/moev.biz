@@ -247,6 +247,7 @@
   type:
     - Map
     - Artwork
+  online: false
 
 - name: Haus 2021
   year: 2021
@@ -315,6 +316,7 @@
   text: Artist portfolio for Vitaly Bezpalov
   type:
     - Portfolio
+  online: false
 
 - name: Independent Space Index 2020
   year: 2020
@@ -473,6 +475,7 @@
   text: Website for a gallery in Paris
   type:
     - Exhibition Archive
+  online: false
 
 - name: school
   year: 2019
