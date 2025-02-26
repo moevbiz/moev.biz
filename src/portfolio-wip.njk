@@ -21,8 +21,8 @@ layout: layouts/base
 {% endmacro %}
 
 {% macro heading(text, nr) %}
-  <h2 class="text-gray-400 flex gap-4 items-center">
-    {# {{number(nr)}}  #}
+  <h2 class="text-gray-400 flex gap-8 items-center">
+    {{number(nr)}} 
     {{ text }}
   </h2>
 {% endmacro %}
@@ -43,25 +43,30 @@ layout: layouts/base
 </section> #}
 
 <section class="mb-20">
-  <div class="text-xl">
-    {{heading('Curatorial work', 1)}}
+  <div class="text-xl mb-20">
+    {{heading('Curatorial work', 0)}}
     <p class="">
       My curatorial work is informed by an ongoing research about the surrounding conditions of independent artistic practices, and characterized by close collaboration with international artists in support of new productions.
     </p>
   </div>
+  <ul>
+    <li>Zone 1</li>
+    <li>James Lewis</li>
+    <li>Gazebo</li>
+  </ul>
 </section>
 
 <section class="mb-20">
   <div class="text-xl mb-20">
     <h2 class="text-gray-400">
-      {{ heading('Project management', 2) }}
+      {{ heading('Project management', 1) }}
     </h2>
     <p class="">
       I conceive and develop sensible formats in the field of contemporary art and culture, both self-initiated as well as commissioned, and commit to their long-term establishment.
     </p>
   </div>
   <ul>
-    {%- for project in projectmanagement -%}
+    {%- for project in port_projectmanagement -%}
       {{ item(project.name, project.text, project.year)}}
     {%- endfor -%}
   </ul>
@@ -70,7 +75,7 @@ layout: layouts/base
 <section class="mb-20">
   <div class="text-xl mb-20">
     <h2 class="text-gray-400">
-      {{ heading('Production', 3) }}
+      {{ heading('Production', 2) }}
     </h2>
     <p class="text-xl">
       I collaborate with artists, curators, and designers on the production of artworks, books, and editions, as well as the realization of exhibitions, events, and showcases.
@@ -99,53 +104,15 @@ layout: layouts/base
 <section class="mb-20">
   <div class="text-xl mb-20">
     <h2 class="text-gray-400">
-     {{ heading('Web development', 4) }}
+     {{ heading('Web development', 3) }}
     </h2>
     <p class="">
-      I design and develop fully tailored websites that are useful, simple, and effortless to maintain. Currently <span class="text-green-500">available</span> for new commissions, consulting, and development services for other designers and agencies.
+      I design and develop fully tailored websites that are useful, simple, and effortless to maintain. I am open for new commissions, consulting, and development services for other designers and agencies. Visit <a class="text-green-500" href="https://bingo.computer">bingo.computer</a> for the full portfolio.
     </p>
   </div>
   <ul class="flex flex-col">
-    {%- for item in sites -%}
-      {% if item.online == false %}
-        <li class="sm:grid grid-cols-8 flex-col justify-between relative py-3 border-b border-gray-400">
-          <div class="col-span-2">
-            <h2 class="opacity-40">{{ item.name }} (offline)</h2>
-          </div>
-          <div class="col-span-5">
-            <p class="text-gray-400">{{ item.text }}</p>
-          </div>
-          <div class="col-span-1 text-right">
-            {{ item.year }}
-          </div>
-        </li>
-      {% else %}
-        <a class="link | group" href="{{ item.url }}" target="_blank" noopener noreferrer data-frame-info-top="" data-frame-info-btm="
-              <div class='flex flex-wrap gap-4'>
-                <span class='name text-sm'>{{ item.name }}</span>
-                {% for tech in item.tech %}
-                  <div class='flex gap-2 items-center'>
-                    <div class='w-3 h-3 rounded-full relative overflow-hidden flex text-sm'>
-                      <i class='w-full h-full' data-tech='{{ tech }}'></i>
-                    </div>
-                    <span class='techname opacity-50 text-sm'>{{ tech }}</span>
-                  </div>
-                {% endfor %}
-                </div>
-                ">
-          <li class="sm:grid grid-cols-8 flex-col justify-between relative py-3 border-y border-gray-400 -mt-px">
-            <div class="col-span-2">
-              <h2 class="">{{ item.name }}</h2>
-            </div>
-            <div class="col-span-5 mt-2 sm:mt-0">
-              <p class="text-gray-400">{{ item.text }}</p>
-            </div>
-            <div class="col-span-1 text-right hidden sm:block">
-            {{ item.year }}
-          </div>
-          </li>
-        </a>
-    {% endif %}
+    {%- for project in port_selectedsites -%}
+      {{ item(project.name, project.text, project.year)}}
     {% endfor %}
   </ul>
 </section>
@@ -153,19 +120,16 @@ layout: layouts/base
 <section class="mb-20">
   <div class="text-xl mb-12">
     <h2 class="text-gray-400">
-      {{ heading('Other work', 5) }}
+      {{ heading('Other work', 4) }}
     </h2>
     <p class="">
-      I regularly participate in talks, workshops, panels, and exchanges. I studied creative writing and fine art in Vienna, and have experience in editorial work, translation, consulting, fundraising, construction, electronics, interior design...
+      I regularly participate in talks, workshops, panels, and exchanges. I formally studied creative writing and fine art in Vienna, and have experience in editorial work, translation, consulting, fundraising, construction, electronics, interior design... Selected references include:
     </p>
   </div>
-    <ul>
-      <li>Bureaucracy Studies, Lausanne</li>
-      <li>viennacontemporary art fair, Vienna</li>
-      <li>University of Applied Arts, Vienna</li>
-      <li>Youth Salon, Zagreb</li>
-      <li>Stage Bregenz, Bregenz</li>
-      <li>2mares, Marseille</li>
+    <ul class="flex flex-col">
+      {%- for project in port_other -%}
+        {{ item(project.name, project.text, project.year)}}
+      {% endfor %}
     </ul>
 </section>
 

@@ -2,57 +2,29 @@
 layout: layouts/base
 ---
 
-<a href="/sites">
-    <div class="fixed top-0 left-[1rem] w-[calc(100vw-2rem)] h-[90vh] text-center flex justify-center items-center">
-        <h1 class="fitty" id="description" data-options="{% for field in fields %}{{ field }}{%if (loop.index < fields.length) %},{%endif%} {% endfor %}">&nbsp;</h1>
-    </div>
-</a>
+<div class="fixed top-0 left-[1rem] w-[calc(100vw-2rem)] h-[90vh] text-center flex justify-center items-center">
+        <div class="fitty leading-none">
+    <a href="https://bingo.computer">
+            moev.biz is now bingo.computer
+            <br>
+            redirecting in <span id="countdown"></span>
+    </a>
+        </div>
+</div>
 
-{# <div class="absolute left-0 w-full p-3 sm:p-5 z-50">
-    <div class="md:grid grid-cols-4 w-full">
-        <div class="">
-            <h1>
-                Services
-            </h1>
-            <div class="text-gray-400">
-                Design <br>
-                Web Development <br>
-                Consulting <br>
-                Strategy <br>
-                Branding <br>
-                Editorial <br>
-                Marketing <br>
-            </div>
-        </div>
-        <div class="">
-            <h1>
-                Digital
-            </h1>
-            <div class="text-gray-400">
-                Kirby CMS <br>
-                Shopify <br>
-                Web Hosting <br>
-                E-commerce <br>
-                PHP <br>
-                JAMStack <br>
-                Creative Coding <br>
-            </div>
-        </div>
-        <div class="">
-            <h1>
-                Analog
-            </h1>
-            <div class="text-gray-400">
-                Print <br>
-                Exhibition Design <br>
-                Production <br>
-                Advertisement <br>
-                Typography <br>
-            </div>
-        </div>
-    </div>
-</div> #}
+<script>
+    const counter = document.querySelector('#countdown');
+    let number = 7;
 
-{# <div class="fixed pointer-events-none top-0 left-0 w-full h-full flex items-center justify-center">
-    <img class="bg-black w-[66%] max-w-[350px]" src="assets/images/img_clean.jpg" alt="" srcset="">
-</div> #}
+    const countDown = () => {
+        number = --number;
+        console.log(number);
+        counter.innerText = number;
+        setTimeout(countDown, 1000);
+        if (number <= 0) {
+            number = 0;
+            window.location = 'https://bingo.computer'; 
+        }
+    }
+    countDown();
+</script>
