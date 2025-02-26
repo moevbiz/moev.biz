@@ -1,10 +1,11 @@
 <header class="p-3 sm:p-6 mb-28">
-    <div class="md:grid grid-cols-4 w-full">
+    <div class="grid md:grid-cols-4 w-full gap-y-2">
         <div class="">
+            {% if page.url != '/' %}
             <a href="https://moev.biz">
-                {# <h1 class="inline">moev.biz</h1> #}
-                <span class="inline" id="description" data-options="{% for field in fields %}{{ field }}{%if (loop.index < fields.length) %},{%endif%} {% endfor %}">&nbsp;</span>
+                <h1 class="inline" id="description" data-options="{% for field in fields %}{{ field }}{%if (loop.index < fields.length) %},{%endif%} {% endfor %}">&nbsp;</h1>
             </a>
+            {% endif %}
         </div>
         <div class="col-span-2">
             <div class="text-gray-400">

@@ -1,5 +1,45 @@
+- name: 'Independent Space Index (upcoming)'
+  year: 2025
+  url: ''
+  tech:
+    - Tailwind
+    - Alpine.js
+    - Kirby CMS
+  text: |
+    Website relaunch. Development: treat agency
+
+# - name: Eline Mul (upcoming)
+#   year: 2025
+#   url: ''
+#   tech:
+#     - Tailwind
+#     - Alpine.js
+#     - Kirby CMS
+#   text: |
+#     Portfolio for designer Eline Mul
+
+# - name: Marlie Mul (upcoming)
+#   year: 2025
+#   url: ''
+#   tech:
+#     - Tailwind
+#     - Alpine.js
+#     - Kirby CMS
+#   text: |
+#     Portfolio for artist Marlie Mul
+
+- name: Siegfried Resch (upcoming)
+  year: 2025
+  url: ''
+  tech:
+    - Tailwind
+    - Alpine.js
+    - Kirby CMS
+  text: |
+    Website for a winemaker
+
 - name: Independent Space Index 2025
-  year: 2024
+  year: 2025
   url: 'https://2025.index.wien'
   tech:
     - Tailwind
@@ -7,6 +47,9 @@
     - Kirby CMS
   text: |
     Website for a festival program. Graphics: Alexandra Möllner
+  roles:
+    - Design
+    - Development
 
 - name: Luka Berchtold
   year: 2024
@@ -17,6 +60,9 @@
     - Kirby CMS
   text: |
     Artist portfolio. Design: Sebastian Koeck
+  roles:
+    - Design
+    - Development
 
 - name: Independent Space Index 2024
   year: 2024
@@ -28,7 +74,7 @@
   text: |
     Website for a festival program. Design: with Sebastian Koeck
 
-- name: Hyperreality
+- name: Hyperreality (offline)
   year: 2024
   url: 'https://hyperreality.at'
   tech:
@@ -37,7 +83,7 @@
     - Kirby CMS
   text: |
     Website for an annual music festival taking place in an off-location in Vienna. Design: Hyperreality
-  online: false
+  disabled: true
   
 - name: XR-Atlas
   year: 2024
@@ -85,7 +131,7 @@
     - SCSS
     - Eleventy
   text: | 
-    Website for a festival program. Graphics: Hannah Sakai. Development: Barnabás Bacsi / Camp Notes
+    Website for a festival program. Graphics: Hannah Sakai, Development: Barnabás Bacsi / Camp Notes
 
 - name: Pinacoteca
   year: 2023
@@ -117,7 +163,7 @@
   text: |
     Website for a company for New Work and Corporate Innovation. Design: Period
 
-- name: Dishes
+- name: Dishes (offline)
   year: 2022
   url: 'https://dishes.menu'
   tech:
@@ -126,19 +172,7 @@
     - Eleventy
   text: |
     Minisite for an event series in Vienna. Design: Marlene Kager
-  online: false
-
-- name: MXR
-  year: 2021
-  url: 'https://mxr.at'
-  tech: 
-    - HTML
-    - JavaScript
-    - SCSS
-    - Kirby CMS
-  text: |
-    Website for a film production company. Design: brand unit
-  online: false
+  disabled: true
 
 - name: Independent Space Index 2022
   year: 2022
@@ -149,6 +183,28 @@
     - Eleventy
   type: 
   text: 'Website for a festival program'
+
+- name: MXR (offline)
+  year: 2021
+  url: 'https://mxr.at'
+  tech: 
+    - HTML
+    - JavaScript
+    - SCSS
+    - Kirby CMS
+  text: |
+    Website for a film production company. Design: brand unit
+  disabled: true
+
+- name: Kevin Space
+  year: 2022
+  url: 'https://www.kevinspace.org'
+  tech: 
+    - HTML
+    - SCSS
+    - Kirby CMS
+  type: 
+  text: 'Website for Kunstverein Kevin Space. Design: Sophia Stemshorn'
 
 - name: Period
   year: 2021
@@ -161,19 +217,6 @@
   text: 'Quarterly online magazine for sustainability, equality and innovation'
   type:
     - Magazine
-  large: true
-  image: period2.jpg
-  color: orchid
-
-- name: Kevin Space
-  year: 2022
-  url: 'https://www.kevinspace.org'
-  tech: 
-    - HTML
-    - SCSS
-    - Kirby CMS
-  type: 
-  text: 'Relaunch of website for Kunstverein Kevin Space. With Sophia Stemshorn'
 
 - name: Spas Setun
   year: 2021
@@ -186,7 +229,7 @@
   type:
     - Exhibition Archive
 
-- name: EXILE TV
+- name: EXILE TV (offline)
   year: 2021
   url: 'https://tv.exilegallery.org'
   tech:
@@ -196,9 +239,9 @@
   text: Video player for a gallery in Vienna
   type:
     - Web App
-  online: false
+  disabled: true
 
-- name: Viennacontemporary City Map
+- name: viennacontemporary City Map
   year: 2021
   url: 'https://www.viennacontemporary.at/map'
   tech:
@@ -217,13 +260,10 @@
     - SCSS
     - Eleventy
   text: >-
-    Interactive wiki for Joshua Citarella
+    Interactive wiki for artist Joshua Citarella
   type:
     - Minisite
     - Artwork
-  large: true
-  image: josh.jpg
-  color: salmon
 
 - name: Independent Space Index 2021
   year: 2021
@@ -237,17 +277,17 @@
     - Map
     - Organization
 
-- name: Posen
+- name: Posen (offline)
   year: 2021
   url: 'https://www.posen.at'
   tech:
     - JavaScript
     - Kirby CMS
-  text: Digital city map for Johanna Charlotte Trede
+  text: Digital city map for artist Johanna Charlotte Trede
   type:
     - Map
     - Artwork
-  online: false
+  disabled: true
 
 - name: Haus 2021
   year: 2021
@@ -266,22 +306,22 @@
   tech:
     - JavaScript
     - Kirby CMS
-  text: Print and online publication for art criticism and practice
+  text: Website for a publication for art criticism and practice
   type:
     - Magazine
     - Web shop
 
-- name: Vodka Brunch
+- name: Vodka Brunch (offline)
   year: 2021
   url: 'https://vodkabrunch.vercel.app/'
   tech:
     - HTML
     - CSS
     - Node
-  text: Contibutions for my uni department's annual "Vodka Brunch"
+  text: Website for an annual event in frame of Rundgang at the Academy of Fine Arts
   type:
     - Minisite
-  online: false
+  disabled: true
 
 - name: New Jörg
   year: 2021
@@ -290,7 +330,7 @@
     - HTML
     - CSS
     - Kirby CMS
-  text: Web shop for an artist-run space
+  text: 'Website for an artist-run space. Design: New Jörg'
   type:
     - Exhibition Archive
     - Web shop
@@ -302,21 +342,21 @@
     - HTML
     - CSS
     - Kirby CMS
-  text: Portfolio for Katharina Mokross
+  text: Portfolio
   type:
     - Portfolio
 
-- name: Vitaly Bezpalov
+- name: Vitaly Bezpalov (offline)
   year: 2020
   url: 'https://vitalybezpalov.com'
   tech:
     - HTML
     - CSS
     - JavaScript
-  text: Artist portfolio for Vitaly Bezpalov
+  text: Portfolio for artist Vitaly Bezpalov
   type:
     - Portfolio
-  online: false
+  disabled: true
 
 - name: Independent Space Index 2020
   year: 2020
@@ -337,7 +377,7 @@
 #   type:
 #     - Browser Extension
 
-- name: Chimera
+- name: Chimera (offline)
   year: 2020
   url: 'https://chimera.is'
   tech:
@@ -346,7 +386,7 @@
   text: Website for a transdisciplinary community-based platform
   type:
     - Organization
-  online: false
+  disabled: true
 
 - name: bingo.computer
   year: 2020
@@ -430,7 +470,7 @@
     - Organization
     - Map
 
-- name: Hugo Zorn
+- name: Hugo Zorn (offline)
   year: 2019
   url: 'https://hugozorn.com'
   tech:
@@ -441,7 +481,7 @@
   text: Website for a platform for contemporary art
   type:
     - Magazine
-  online: false
+  disabled: true
 
 - name: Independent Space Index 2019
   year: 2019
@@ -465,7 +505,7 @@
 #   type:
 #     - Portfolio
 
-- name: Lily Robert
+- name: Lily Robert (offline)
   year: 2019
   url: 'https://lilyrobert.com'
   tech:
@@ -475,7 +515,7 @@
   text: Website for a gallery in Paris
   type:
     - Exhibition Archive
-  online: false
+  disabled: true
 
 - name: school
   year: 2019
@@ -508,7 +548,7 @@
 #   type:
 #     - Organization
 
-# - name: Edin Zenun
+# - name: Edin Zenun (offline)
 #   year: 2018
 #   url: 'https://edinzenun.at'
 #   tech:
@@ -518,6 +558,7 @@
 #   text: Artist portfolio
 #   type:
 #     - Portfolio
+#   disabled: true
 
 - name: Independent Space Index
   year: 2017
@@ -548,6 +589,6 @@
   tech:
     - HTML
     - CSS
-  text: Website for a non-commercial gallery space in Vienna
+  text: Website for a project space in Vienna
   type:
     - Exhibition Archive

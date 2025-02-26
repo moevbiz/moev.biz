@@ -1,6 +1,12 @@
 ---
-layout: layouts/prose
+layout: layouts/base
 ---
+
+<a href="/sites">
+    <div class="fixed top-0 left-[1rem] w-[calc(100vw-2rem)] h-[90vh] text-center flex justify-center items-center">
+        <h1 class="large" id="description" data-options="{% for field in fields %}{{ field }}{%if (loop.index < fields.length) %},{%endif%} {% endfor %}">&nbsp;</h1>
+    </div>
+</a>
 
 {# <div class="absolute left-0 w-full p-3 sm:p-5 z-50">
     <div class="md:grid grid-cols-4 w-full">
@@ -47,6 +53,6 @@ layout: layouts/prose
     </div>
 </div> #}
 
-<div class="fixed pointer-events-none top-0 left-0 w-full h-full flex items-center justify-center">
+{# <div class="fixed pointer-events-none top-0 left-0 w-full h-full flex items-center justify-center">
     <img class="bg-black w-[66%] max-w-[350px]" src="assets/images/img_clean.jpg" alt="" srcset="">
-</div>
+</div> #}
