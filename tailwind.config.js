@@ -8,7 +8,7 @@ module.exports = {
     fontSize: {
       sm: ['12px', '15px'],
       base: ['14px', '19px'],
-      lg: ['25px', '29px'],
+      lg: ['30px', '32px'],
       xl: ['42px', '45px'],
     },
     extend: {},

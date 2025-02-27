@@ -1,10 +1,6 @@
 - name: Independent Space Index 2024
   year: 2024
-  url: 'https://2024.independentspaceindex.at'
-  tech:
-    - Tailwind
-    - Alpine.js
-    - Kirby CMS
+  link: 'https://2024.independentspaceindex.at'
   text: |
     Website for a festival program. Design: with Sebastian Koeck
 
@@ -20,31 +16,21 @@
 
 - name: Infrastructuring Libraries in Transformation
   year: 2023
-  url: 'https://transforminglibraries.net'
-  tech:
-    - Tailwind
-    - Alpine.js
-    - Kirby CMS
+  link: 'https://transforminglibraries.net'
   text: | 
     Website for an academic research project. Design: Alessia Scuderi
 
 - name: period. Interactive
   year: 2022
-  url: 'https://interactive.period.at'
-  tech:
-    - Tailwind
-    - Alpine.js
-    - Kirby CMS
+  link: 'https://interactive.period.at'
   text: |
     Website for a company for New Work and Corporate Innovation. Design: Period
 
 - name: ENTKUNSTUNG
   year: 2021
-  url: 'https://entkunstung.com'
-  tech:
-    - JavaScript
-    - Kirby CMS
-  text: Website for a publication for art criticism and practice
+  link: 'https://entkunstung.com'
+  text: |
+    Website for a publication for art criticism and practice. Design: Maximilian Mauracher
   type:
     - Magazine
     - Web shop

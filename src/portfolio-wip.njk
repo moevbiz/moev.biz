@@ -2,18 +2,41 @@
 layout: layouts/base
 ---
 
-{% macro item(name, text, year, disabled=false) %}
-  <li class="sm:grid grid-cols-8 flex-col justify-between relative py-3 border-y border-gray-400 -mt-px hover:bg-slate-50">
-    <div class="col-span-2">
-      <h2 class="">{{ name }}</h2>
-    </div>
-    <div class="col-span-5">
-      <p class="text-gray-400">{{ text }}</p>
-    </div>
-    <div class="col-span-1 text-right">
-      {{ year }}
-    </div>
-  </li>
+{% macro item(name, text, year, link) %}
+  {% if link %}
+  <a href="{{ link }}">
+  {% endif %}
+    <li class="sm:grid grid-cols-8 flex-col justify-between relative py-3 border-y -mt-px border-gray-400 hover:bg-slate-50">
+      <div class="col-span-2">
+        <h2 class="">{{ name }}</h2>
+      </div>
+      <div class="col-span-5">
+        <p class="text-gray-400 max-w-[88ch]">{{ text | safe }}</p>
+      </div>
+      <div class="col-span-1 text-right">
+        {{ year }}
+      </div>
+    </li>
+  {% if link != '' %}
+  </a>
+  {% endif %}
+{% endmacro %}
+
+{% macro itemSmall(name, text, link) %}
+  {% if link %}
+  <a href="{{ link }}">
+  {% endif %}
+    <li class="grid grid-cols-2 gap-x-2 max-w-[550px]">
+      <div class="">
+        <h2 class="">{{ name }}</h2>
+      </div>
+      <div class="">
+        <p class="text-gray-400 max-w-[88ch]">{{ text | safe }}</p>
+      </div>
+    </li>
+  {% if link != '' %}
+  </a>
+  {% endif %}
 {% endmacro %}
 
 {% macro number(number) %}
@@ -21,114 +44,88 @@ layout: layouts/base
 {% endmacro %}
 
 {% macro heading(text, nr) %}
-  <h2 class="text-gray-400 flex gap-8 items-center">
+<a href="#{{nr}}">
+  <h2 id="{{nr}}" class="text-gray-400 flex gap-8 items-center pt-4">
     {{number(nr)}} 
     {{ text }}
   </h2>
+</a>
 {% endmacro %}
 
-{# {% macro number(number) %}
-  <span class="text-gray-400 font-serif">{{ number }}</span>
-{% endmacro %} #}
-
-{# <section class="mb-12">
-  <div class="text-xl">
-    <h2 class="text-gray-400">
-      Background
-    </h2>
-    <p class="">
-      I have years of experience working as an artist, designer, and curator. My practice is informed by close collaboration with and broad research into the working modes of independent artists, networks, and studios.
-    </p>
-  </div>
-</section> #}
-
 <section class="mb-20">
-  <div class="text-xl mb-20">
-    {{heading('Curatorial work', 0)}}
-    <p class="">
-      My curatorial work is informed by an ongoing research about the surrounding conditions of independent artistic practices, and characterized by close collaboration with international artists in support of new productions.
-    </p>
-  </div>
-  <ul>
-    <li>Zone 1</li>
-    <li>James Lewis</li>
-    <li>Gazebo</li>
-  </ul>
-</section>
-
-<section class="mb-20">
-  <div class="text-xl mb-20">
+  <div class="text-lg md:text-xl mb-20">
     <h2 class="text-gray-400">
       {{ heading('Project management', 1) }}
     </h2>
     <p class="">
-      I conceive and develop sensible formats in the field of contemporary art and culture, both self-initiated as well as commissioned, and commit to their long-term establishment.
+      I conceive and develop sensible formats in the field of contemporary art and culture, self-initiated as well as commissioned, and commit to their long-term establishment.
     </p>
   </div>
   <ul>
-    {%- for project in port_projectmanagement -%}
-      {{ item(project.name, project.text, project.year)}}
+    {% for project in port_projectmanagement %}
+      {{ item(project.name, project.text | safe, project.year, project.link)}}
     {%- endfor -%}
   </ul>
 </section>
 
 <section class="mb-20">
-  <div class="text-xl mb-20">
-    <h2 class="text-gray-400">
-      {{ heading('Production', 2) }}
-    </h2>
-    <p class="text-xl">
-      I collaborate with artists, curators, and designers on the production of artworks, books, and editions, as well as the realization of exhibitions, events, and showcases.
-    </p>
-  </div>
-  <p>
-    <ul>
-      <li>Micah Schippa exhibition at Pech</li>
-      <li>Screenings at Pinacoteca</li>
-      <li>Pina at Salzburger Kunstverein</li>
-      <li>CLOSER Book</li>
-      <li>CLOSER Panel Discussion</li>
-      <li>CLOSER Branding and CI</li>
-      <li>CLOSER Event at Pech</li>
-      <li>James Lewis exhibition at Pech</li>
-      <li>Rage and Stagnation T-Shirt</li>
-      <li>Pech Lighter</li>
-      <li>Opening Doppler</li>
-      <li>Goswell Road / Will Benedict Edition</li>
-      <li>Zone 1</li>
-      <li>Alison Veit</li>
-    </ul>
-  </p>
-</section>
-
-<section class="mb-20">
-  <div class="text-xl mb-20">
-    <h2 class="text-gray-400">
-     {{ heading('Web development', 3) }}
-    </h2>
+  <div class="text-lg md:text-xl mb-20">
+    {{heading('Curatorial work', 2)}}
     <p class="">
-      I design and develop fully tailored websites that are useful, simple, and effortless to maintain. I am open for new commissions, consulting, and development services for other designers and agencies. Visit <a class="text-green-500" href="https://bingo.computer">bingo.computer</a> for the full portfolio.
+      My curatorial work is informed by ongoing research about the surrounding conditions of independent artistic practices, and characterized by close collaboration with international artists in support of new productions.
     </p>
   </div>
-  <ul class="flex flex-col">
-    {%- for project in port_selectedsites -%}
-      {{ item(project.name, project.text, project.year)}}
+  <ul>
+    {%- for project in port_curatorial -%}
+      {{ item(project.name, project.text, project.year, project.link)}}
     {% endfor %}
   </ul>
 </section>
 
 <section class="mb-20">
-  <div class="text-xl mb-12">
+  <div class="text-lg md:text-xl mb-20">
     <h2 class="text-gray-400">
-      {{ heading('Other work', 4) }}
+      {{ heading('Production', 3) }}
     </h2>
     <p class="">
-      I regularly participate in talks, workshops, panels, and exchanges. I formally studied creative writing and fine art in Vienna, and have experience in editorial work, translation, consulting, fundraising, construction, electronics, interior design... Selected references include:
+      I collaborate with artists, curators, and designers on the production of artworks, books, and editions, as well as the realization of exhibitions, events, and showcases.
+    </p>
+  </div>
+    <ul class="grid md:grid-cols-2 gap-x-5">
+      {%- for project in port_production -%}
+        {{ itemSmall(project.name, project.text, project.year, project.link)}}
+      {% endfor %}
+    </ul>
+</section>
+
+<section class="mb-20">
+  <div class="text-lg md:text-xl mb-20">
+    <h2 class="text-gray-400">
+     {{ heading('Web development', 4) }}
+    </h2>
+    <p class="">
+      I design and develop fully tailored websites that are useful, simple, and effortless to maintain. Open for new commissions, consulting, and development services for other designers and agencies. Visit <a class="text-green-500" href="https://bingo.computer">bingo.computer</a> for the full portfolio.
+    </p>
+  </div>
+  <ul class="flex flex-col">
+    {%- for project in port_selectedsites -%}
+      {{ item(project.name, project.text, project.year, project.link)}}
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="mb-20">
+  <div class="text-lg md:text-xl mb-20">
+    <h2 class="text-gray-400">
+      {{ heading('Other work', 5) }}
+    </h2>
+    <p class="">
+      I regularly participate in talks, workshops, panels, and exchanges. I formally studied creative writing and fine art in Vienna, and have experience in editorial work, translation, consulting, fundraising, construction, sound design, electronics, interior design... Selected references include:
     </p>
   </div>
     <ul class="flex flex-col">
       {%- for project in port_other -%}
-        {{ item(project.name, project.text, project.year)}}
+        {{ itemSmall(project.name, project.text, project.year, project.link)}}
       {% endfor %}
     </ul>
 </section>

@@ -8,14 +8,6 @@
 ---
 {% include 'partials/htmlhead.njk' %}
 
-{% include "partials/header.njk" %}
-
-    <main class="mb-12 flex-1">
-      <div class="main-content p-3 sm:p-6">
-        {{ content | safe }}
-      </div>
-    </main>
-
-{% include "partials/footer.njk" %}
+{{ content | safe }}
 
 {% include 'partials/htmlfoot.njk' %}

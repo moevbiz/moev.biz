@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/js/*.js");
   eleventyConfig.addPassthroughCopy("src/assets/images");
 
-  eleventyConfig.addDataExtension("yaml", contents => {
+  eleventyConfig.addDataExtension("yml,yaml", contents => {
     let c = yaml.load(contents);
     return c;
   });

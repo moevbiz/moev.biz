@@ -1,8 +1,14 @@
 - name: Zone 1 at viennacontemporary
-  text: Editorial
+  text: Zone 1 is a section of the art fair viennacontemporary, focusing on emerging talents with a connection to Austria. With ten solo exhibitions of artists who live or have lived in Vienna, I want to examine what attracts international artists to Vienna and how the living conditions affect their practice.
   link: https://www.viennacontemporary.at/en/program/zone/
+  year: 2024
+
 - name: James Lewis at Pech
   text: Exhibition by artist James Lewis at Pech
   link: https://pech.is/james-lewis
-- name: Gazebo
-  text: Gazebo was a series of exhibitions in public pavilions
+  year: 2024
+
+- name: Pina at Salzburger Kunstverein
+  link: https://salzburger-kunstverein.at/pina_eng
+  text: The exhibition at Salzburger Kunstverein featured a life-size model of a gallery space in Vienna, contrasting the dimensions of the these two Kunstvereins by inserting one into the other. Constructed from specially designed steel modules, this display structure is  used as a framework for the artworks included in the show.
+  year: 2022

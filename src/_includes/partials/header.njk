@@ -1,22 +1,36 @@
 <header class="p-3 sm:p-6 mb-28">
     <div class="grid md:grid-cols-4 w-full gap-y-2">
         <div class="">
-            {% if page.url != '/' %}
-            <a href="https://moev.biz">
+            <a href="/">
                 <h1 class="inline" id="description" data-options="{% for field in fields %}{{ field }}{%if (loop.index < fields.length) %},{%endif%} {% endfor %}">&nbsp;</h1>
             </a>
-            {% endif %}
         </div>
         <div class="col-span-2">
-            <div class="text-gray-400">
-                for institutions, brands, artists, and creatives
-                <br> 
-                in the fields of visual arts and contemporary culture
+            <div class="text-gray-400 flex flex-wrap gap-x-16">
+                <div class="flex flex-col">
+                    <a href="#1">
+                        <span class="pr-8">1</span>Project management
+                    </a>
+                    <a href="#2">
+                        <span class="pr-8">2</span>Curatorial work
+                    </a>
+                    <a href="#3">
+                        <span class="pr-8">3</span>Production
+                    </a>
+                </div>
+                <div class="flex flex-col">
+                    <a href="#4">
+                        <span class="pr-8">4</span>Web development
+                    </a>
+                    <a href="#5">
+                        <span class="pr-8">5</span>Other work
+                    </a>
+                </div>
             </div>
         </div>
         <div class="w-full md:text-right">
             <p>
-                <a href="mailto:moev.biz@moev.biz" class="">moev.biz@moev.biz</a>
+                <a href="mailto:mail@bruno.earth" class="">mail@bruno.earth</a>
             </p>
         </div>
     </div>
